@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GasWise</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo-link">
+        <img src="imagenes/logo_gw.png" alt="Logo GasWise" class="logo-header" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#info">Información</a></li>
+        <li><a href="#descarga">Descarga</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--Inicio-->
+  <header class="inicio">
+    <div class="container header-flex">
+      <div>
+        <h1 class="title">GasWise</h1>
+        <p class="subtitle">Sistema inteligente para el monitoreo y gestión de gas LP en tiempo real</p>
+      </div>
+    </div>
+  </header>
+
+  <!--Info-->
+  <section class="info-section" id="info">
+    <div class="container">
+      <h2>¿Qué es GasWise?</h2>
+      <p>
+        GasWise es una solución tecnológica que permite monitorear en tiempo real el nivel de gas LP en tanques
+        estacionarios mediante un sensor inteligente. A través de nuestras aplicaciones móviles para clientes y
+        trabajadores, puedes recibir alertas, visualizar el consumo y solicitar recargas con facilidad.
+      </p>
+    </div>
+  </section>
+
+  <!--Descarga-->
+  <section class="download-section" id="descarga">
+    <div class="container">
+      <h2>Descarga la App</h2>
+      <div class="qr-codes">
+        <div class="qr">
+          <img src="imagenes/qr.png" alt="QR Cliente" />
+          <p>App Cliente</p>
+        </div>
+        <div class="qr">
+          <img src="imagenes/qr.png" alt="QR Trabajador" />
+          <p>App Trabajador</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Contacto-->
+  <section class="contact-section" id="contacto">
+    <div class="container">
+      <h2>Contacto</h2>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank" class="icon facebook" title="Facebook">
+          <img src="imagenes/logo_fb.png" alt="Facebook" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="icon instagram" title="Instagram">
+          <img src="imagenes/logo_ig.png" alt="Instagram" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <footer class="footer">
+    <div class="container">
+      <p>GasWise© 2025</p>
+      <a class="legal" onclick="showToast('Aviso de privacidad')">Aviso de privacidad</a>
+      <span>|</span>
+      <a class="legal" onclick="showToast('Términos y condiciones')">Términos y condiciones</a>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+
+  <script>
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      toast.textContent = message;
+      toast.className = "toast show";
+      setTimeout(() => {
+        toast.className = toast.className.replace("show", "");
+      }, 4000);
+    }
+  </script>
+</body>
+
+</html>

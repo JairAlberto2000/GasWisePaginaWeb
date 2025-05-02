@@ -9,10 +9,11 @@
 </head>
 
 <body>
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="container nav-container">
       <a href="#" class="logo-link">
-        <img src="imagenes/logo_gw.png" alt="Logo GasWise" class="logo-header" />
+        <img src="imagenes/logo_gwtanque.png" alt="Logo GasWise" class="logo-header" />
       </a>
       <ul class="nav-links">
         <li><a href="#info">Información</a></li>
@@ -22,7 +23,7 @@
     </div>
   </nav>
 
-  <!--Inicio-->
+  <!-- Inicio -->
   <header class="inicio">
     <div class="container header-flex">
       <div>
@@ -32,7 +33,7 @@
     </div>
   </header>
 
-  <!--Info-->
+  <!-- Info -->
   <section class="info-section" id="info">
     <div class="container">
       <h2>¿Qué es GasWise?</h2>
@@ -44,7 +45,7 @@
     </div>
   </section>
 
-  <!--Descarga-->
+  <!-- Descarga -->
   <section class="download-section" id="descarga">
     <div class="container">
       <h2>Descarga la App</h2>
@@ -61,7 +62,7 @@
     </div>
   </section>
 
-  <!--Contacto-->
+  <!-- Contacto -->
   <section class="contact-section" id="contacto">
     <div class="container">
       <h2>Contacto</h2>
@@ -76,28 +77,15 @@
     </div>
   </section>
 
-  <!--Footer-->
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <p>GasWise© 2025</p>
-      <a class="legal" onclick="showToast('Aviso de privacidad')">Aviso de privacidad</a>
+      <a class="legal" href="aviso-de-privacidad.html" target="_blank">Aviso de privacidad</a>
       <span>|</span>
-      <a class="legal" onclick="showToast('Términos y condiciones')">Términos y condiciones</a>
+      <a class="legal" href="terminos-y-condiciones.html" target="_blank">Términos y condiciones</a>
     </div>
   </footer>
-
-  <div id="toast" class="toast"></div>
-
-  <script>
-    function showToast(message) {
-      const toast = document.getElementById("toast");
-      toast.textContent = message;
-      toast.className = "toast show";
-      setTimeout(() => {
-        toast.className = toast.className.replace("show", "");
-      }, 4000);
-    }
-  </script>
 </body>
 
 </html>

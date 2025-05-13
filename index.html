@@ -1,93 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GasWise</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-
 <body>
-  <!-- Navbar -->
+
+  <!-- NAVBAR -->
   <nav class="navbar">
-    <div class="container nav-container">
-      <a href="#" class="logo-link">
-        <img src="imagenes/logo_gwtanque.png" alt="Logo GasWise" class="logo-header" />
-      </a>
+    <div class="nav-container">
+      <a href="#inicio" class="logo">GasWise</a>
       <ul class="nav-links">
-        <li><a href="#info">Información</a></li>
-        <li><a href="#descarga">Descarga</a></li>
+        <li><a href="#apps">Apps</a></li>
+        <li><a href="#dispositivo">Dispositivo</a></li>
+        <li><a href="#legales">Legales</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Inicio -->
-  <header class="inicio">
-    <div class="container header-flex">
-      <div>
-        <h1 class="title">GasWise</h1>
-        <p class="subtitle">Sistema inteligente para el monitoreo y gestión de gas LP en tiempo real</p>
-      </div>
-    </div>
-  </header>
-
-  <!-- Info -->
-  <section class="info-section" id="info">
-    <div class="container">
-      <h2>¿Qué es GasWise?</h2>
-      <p>
-        GasWise es una solución tecnológica que permite monitorear en tiempo real el nivel de gas LP en tanques
-        estacionarios mediante un sensor inteligente. A través de nuestras aplicaciones móviles para clientes y
-        trabajadores, puedes recibir alertas, visualizar el consumo y solicitar recargas con facilidad.
-      </p>
-    </div>
+  <!-- INICIO -->
+  <section id="inicio" class="hero">
+    <h1>Transforma tu manera de gestionar el gas LP con inteligencia</h1>
+    <p>GasWise es tu aliado para un monitoreo eficiente, inteligente y moderno.</p>
+    <a href="#apps" class="btn">Descubre cómo</a>
   </section>
 
-  <!-- Descarga -->
-  <section class="download-section" id="descarga">
-    <div class="container">
-      <h2>Descarga la App</h2>
-      <div class="qr-codes">
-        <div class="qr">
-          <img src="imagenes/qr.png" alt="QR Cliente" />
-          <p>App Cliente</p>
-        </div>
-        <div class="qr">
-          <img src="imagenes/qr.png" alt="QR Trabajador" />
-          <p>App Trabajador</p>
-        </div>
+  <!-- APPS -->
+  <section id="apps" class="section">
+    <h2>Descarga nuestras Apps</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>App Cliente</h3>
+        <p>Consulta nivel de gas, recibe predicciones y solicita recargas.</p>
+        <img src="imagenes/qr.png" alt="QR App Cliente" />
+      </div>
+      <div class="card">
+        <h3>App Trabajador</h3>
+        <p>Recibe pedidos, organiza entregas y mantente conectado.</p>
+        <img src="imagenes/qr.png" alt="QR App Trabajador" />
       </div>
     </div>
   </section>
 
-  <!-- Contacto -->
-  <section class="contact-section" id="contacto">
-    <div class="container">
-      <h2>Contacto</h2>
-      <div class="social-icons">
-        <a href="https://www.facebook.com" target="_blank" class="icon facebook" title="Facebook">
-          <img src="imagenes/logo_fb.png" alt="Facebook" />
-        </a>
-        <a href="https://www.instagram.com" target="_blank" class="icon instagram" title="Instagram">
-          <img src="imagenes/logo_ig.png" alt="Instagram" />
-        </a>
-      </div>
-    </div>
+  <!-- DISPOSITIVO -->
+  <section id="dispositivo" class="section">
+    <h2>Dispositivo Inteligente</h2>
+    <p>Instálalo fácilmente en tu tanque para comenzar a recibir datos en tiempo real.</p>
+    <img src="imagenes/dispositivo.png" alt="Dispositivo GasWise" style="max-width: 300px;" />
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>GasWise© 2025</p>
-      <a class="legal" href="aviso-de-privacidad.html" target="_blank">Aviso de privacidad</a>
-      <span>|</span>
-      <a class="legal" href="terminos-y-condiciones.html" target="_blank">Términos y condiciones</a>
-      <span>|</span>
-      <a class="legal" href="politicas-y-uso.html" target="_blank">Políticas de uso de servicio</a>
+  <!-- LEGALES -->
+  <section id="legales" class="section">
+    <h2>Avisos y Políticas</h2>
+    <ul>
+      <li><a href="aviso-de-privacidad.html">Aviso de Privacidad</a></li>
+      <li><a href="terminos-y-condiciones.html">Términos y Condiciones</a></li>
+      <li><a href="politicas-y-uso.html">Políticas de Uso</a></li>
+    </ul>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section">
+    <h2>Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Nombre completo" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 GasWise | Eficiente, Eficaz, Efervescente</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/profile.php?id=61572986576704" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/gaswise/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
     </div>
   </footer>
-</body>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+          const targetId = this.getAttribute("href");
+          if (targetId.length > 1) {
+            e.preventDefault();
+            const target = document.querySelector(targetId);
+            if (target) {
+              target.scrollIntoView({ behavior: "smooth" });
+            }
+          }
+        });
+      });
+    });
+  </script>
+</body>
 </html>

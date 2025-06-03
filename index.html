@@ -63,12 +63,15 @@
   <!-- CONTACTO -->
   <section id="contacto" class="section">
     <h2>¿Quieres unirte al equipo de distribución? Contáctanos</h2>
-    <form>
-      <input type="text" placeholder="Nombre completo" required />
-      <input type="email" placeholder="Correo electrónico" required />
-      <textarea placeholder="Mensaje" required></textarea>
+    <form action="contacto.php" method="POST">
+      <input name="nombre" type="text" placeholder="Nombre completo" required />
+      <input name="email" type="email" placeholder="Correo electrónico" required />
+      <textarea name="mensaje" placeholder="Mensaje" required></textarea>
       <button type="submit" class="btn">Enviar</button>
-    </form>
+</form>
+
+</form>
+
   </section>
 
   <!-- FOOTER -->

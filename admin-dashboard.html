@@ -118,7 +118,7 @@
 
     async function cargarTrabajadores() {
       try {
-        const res = await fetch('http://54.243.73.51:3000/api/trabajadores', {
+        const res = await fetch('https://thegaswise.com:3001/api/trabajadores', {
           headers: { Authorization: `Bearer ${token}` }
         });
         const trabajadores = await res.json();

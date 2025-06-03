@@ -79,25 +79,29 @@
         const password = document.getElementById('password').value;
 
         try {
-          const res = await fetch('http://54.243.73.51:3010/api/auth/login', {
+          const res = await fetch('https://thegaswise.com:3001/login-admin', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: { 
+              'Content-Type': 'application/json' 
+            },
             body: JSON.stringify({ email, password })
           });
 
           const data = await res.json();
 
           if (res.ok) {
-            alert(`Bienvenido ${data.admin.Nombre}`);
-            localStorage.setItem('token', data.token);
-            // Redirigir a dashboard si quieres:
-            // window.location.href = 'admin-dashboard.html';
+            // Mensaje de bienvenida con el nombre del admin
+            alert(`Bienvenido ${data.nombre}`);
+            
+            // Redirigir al dashboard (descomenta cuando lo tengas)
+            window.location.href = 'admin-dashboard.html';
           } else {
-            alert(`Error: ${data.message}`);
+            // Mostrar error específico del servidor
+            alert(`Error: ${data.error || 'Credenciales incorrectas'}`);
           }
         } catch (err) {
-          console.error(err);
-          alert("Error de conexión con el servidor.");
+          console.error('Error en login:', err);
+          alert("Error de conexión con el servidor. Intenta nuevamente.");
         }
       });
     });
